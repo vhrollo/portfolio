@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 
 import NavBar from "./components/NavBar";
+import Universe from "./components/Universe";
 
-
-const inter = Inter({ subsets: ["latin"] });
+const inter = Source_Code_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +18,7 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
       <body className={inter.className}> 
         <div className = "flex min-h-screen flex-col">
           <NavBar />
+          <Universe />
           {children}
         </div>
       </body>
