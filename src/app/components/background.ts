@@ -124,7 +124,7 @@ export function dark(): void {
 
   function drawStars(): void {
     if (!context) return;
-		context.fillStyle = "rgba(27,28,32,1)";
+		context.fillStyle = "rgba(23,22,28,1)";
     context.fillRect(0, 0, width, height);
     for (let star of stars) {
       star.move();

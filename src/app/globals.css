@@ -174,7 +174,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: clamp(95vh, 600px, 100vh)
+  height: clamp(95vh, 600px, 100vh);
+  margin-bottom: 5vh;
 }
 
 .header-content {
@@ -185,27 +186,82 @@ body {
 
 .header-circle {
   position: relative;
-  display: block;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
   float: left;
   width: 40vh;
   height: 40vh;
   box-sizing: content-box;
   margin: 0vh 2vh;
   border-radius: 50%;
-  background-color: #d6cef4;
+  background-color: #413f4a;
   shape-outside: circle(calc(50% + 1vh));
   overflow: hidden;
+  animation: header-circle-appear 0.6s cubic-bezier(0.8, 0, 1, 0.2),
+    header-background-fade 0.6s cubic-bezier(0.8, 0, 1, 0.2);
+}
+
+@keyframes header-circle-appear {
+  from {
+    clip-path: circle(2.5vh);
+  }
+  to {
+    clip-path: circle(50%);
+  }
+}
+
+@keyframes header-background-fade {
+  from {
+    background-color: transparent;
+  }
+}
+
+.header-img {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  object-fit: cover;
+  animation: header-circle-img-appear 0.3s 0.3s cubic-bezier(0.8, 0, 1, 0.2) backwards;
+  transition: height 0.3s ease-in,
+    width 0.3s ease-out;
+  pointer-events: all;
+}
+
+.header-img:hover {
+  height: 103%;
+  width: 103%;
+}
+
+@keyframes header-circle-img-appear {
+  from {
+    opacity: 0;
+  }
 }
 
 .intro-spacer {
   display: block;
   height: 0px;
+  animation: intro-spacer 0.5s 0.5s cubic-bezier(0, 0.8, 0.2, 1) backwards;
+}
+
+@keyframes intro-spacer {
+  from {
+    height: 100%;
+  }
 }
 
 .intro-text {
   line-height: 1.8;
   font-style: italic;
   font-size: 2.2vh;
+  animation: intro-text 0.8s 0.4s cubic-bezier(0, 0.8, 0.4, 1) backwards;
+}
+
+@keyframes intro-text {
+  from {
+    line-height: 8;
+  }
 }
 
 .intro-line {
@@ -213,5 +269,135 @@ body {
 }
 
 .intro-link {
-  text-decoration: underline; 
+  text-decoration: underline;
+  color: #d6cef4;
 }
+
+.intro-link:hover {
+    color: #fff;
+}
+
+@media (max-aspect-ratio: 4/5) {
+  .header {
+    height: auto;
+    min-height: 95vh;
+    margin: 30px 0 60px;
+  }
+  .header-content {
+    height: auto;
+    min-width: unset;
+    text-align: center;
+  }
+
+  .header-circle {
+    float: none;
+    width: 30vh;
+    height: 30vh;
+    display: inline-block;
+  }
+
+  .intro-text {
+    display: block;
+    margin-top: 3vh;
+    font-size: 16px;
+    line-height: 1.8;
+    animation: intro-text-mobile 1s cubic-bezier(0, 0.8, 0.4, 1),
+    intro-text-mobile2 0.8s 0.4s cubic-bezier(0, 0.8, 0.4, 1) backwards;
+  }
+
+  @keyframes intro-text-mobile {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes intro-text-mobile2 {
+    from {
+      line-height: 4;
+    }
+  }
+
+  .intro-spacer {
+    animation: none;
+  }
+}
+/* border div */
+.border-line {
+  width: 70vw;
+  height: 0.3vh;
+  background-color: #d6cef4;
+  margin: 2rem auto;
+  border-radius: 13px;
+}
+
+/* home about css */
+
+.about-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 3vh 20vw;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-item {
+  border-radius: 12px;
+  background: rgba(27,28,32,0.2);
+  border: 1px solid #666375;
+  box-shadow: 0 8px 16px -4px rgba(0,0,0,0.314);
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+
+  line-height: 1.6;
+  opacity: 1.0;
+  transition: opacity 0.2s var(--ease);
+}
+
+.closed {
+  opacity: 0.0;
+}
+
+.about-me-title {
+    font-size: 1.5rem; /* Make it larger */
+    font-weight: bold;
+    line-height: 1.2;
+    color: #d6cef4;
+    margin-bottom: 0.5rem;
+}
+
+.about-me-text {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.about-me-link {
+    color: #d6cef4;
+    text-decoration: underline;
+}
+
+.about-me-link:hover {
+    color: #fff;
+}
+
+@media (max-aspect-ratio: 4/5) {
+  .about-section {
+    padding: 0 15vw;
+  }
+
+  .content-item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
