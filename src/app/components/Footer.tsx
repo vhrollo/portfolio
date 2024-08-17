@@ -11,6 +11,8 @@ export default function Footer() {
 			</div>
 			<div className="footer-content">
 			</div>
+            <a href="#top" className="main-footer-top">^</a>
+            
 		</footer>
 	);
 }
