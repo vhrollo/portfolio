@@ -76,7 +76,7 @@ export default function Home() {
               the University of Bergen.
             </p>
             <p className="about-me-text">
-              For more miscellaneous information about me, visit my&nbsp;
+              For more misc stuff about me, visit my&nbsp;
               <Link href="/about" className="about-me-link">About page</Link>
               . You can also check out my&nbsp;
               <Link href="/projects" className="about-me-link">projects</Link>
