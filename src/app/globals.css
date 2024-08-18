@@ -326,7 +326,7 @@ body {
 }
 /* border div */
 .border-line {
-  width: 70vw;
+  width: 40vw;
   height: 0.3vh;
   background-color: #d6cef4;
   margin: 2rem auto;
@@ -417,6 +417,11 @@ body {
   background-color: #9994;
   /* background-image: linear-gradient(0deg, #999 80%, transparent 100%); */
 }
+@media (max-width: 700px) {
+  .main-footer {
+    flex-direction: column-reverse;
+  }
+}
 
 .footer-content {
 
@@ -429,8 +434,8 @@ body {
 }
 
 .main-footer-link-icon:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
+  -webkit-filter: invert(80%);
+  filter: invert(80%);
 }
 
 .main-footer-top {
@@ -462,3 +467,114 @@ body {
   border-top-right-radius: 18px;
   box-shadow: 18px 0 0 #17161C;
 }
+
+.main-footer-links-head {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1c1b20;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.main-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main-footer-line {
+  margin: 12px 0;
+}
+
+.main-footer-link-text {
+  color: #1c1b20;
+  text-decoration: underline;
+  padding: 0 0.5rem;
+}
+
+.main-footer-link-text:hover {
+  color: #d6cef4;
+}
+
+/* about css */
+
+.about-page-title {
+  margin: 15vh 0 0.5rem;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: fff;
+}
+
+.about-page-subtitle {
+  margin: 0 0 2rem;
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  color: #999; 
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+.about-page-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.about-page-content-item {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(27,28,32,0.2);
+  border: 1px solid #666375;
+  box-shadow: 0 8px 16px -4px rgba(0,0,0,0.314);
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+
+  line-height: 1.6;
+  opacity: 1.0;
+  transition: opacity 0.2s var(--ease);
+
+}
+
+.item60 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  width: calc(60% - 0.5rem / 2);
+}
+
+.item40 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  width: calc(40% - 0.5rem / 2);
+}
+
+.itemnormal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  width: calc(50% - 0.5rem / 2);
+}
+
+.item-gradient {
+  background: linear-gradient(120deg, #413f4a 0, #8c879f 100%);
+  background-size: 200%;
+}
+
