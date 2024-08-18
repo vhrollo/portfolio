@@ -7,7 +7,9 @@ export default function Footer() {
 		<footer className="main-footer">
 			<div className="footer-content">
 				<p className="main-footer-links-head">On the web</p>
-				<Link href="https://www.linkedin.com/in/vhrollo/" target="_blank" className="main-footer-link">LinkedIn</Link>
+				<Link href="https://www.linkedin.com/in/vhrollo/" target="_blank" className="main-footer-link">
+					<img className="main-footer-link-icon" src="/footer-icons/linkdin-icon.png" alt="LinkedIn"/>
+				</Link>
 			</div>
 			<div className="footer-content">
 			</div>

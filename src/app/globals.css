@@ -422,6 +422,17 @@ body {
 
 }
 
+.main-footer-link-icon {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+.main-footer-link-icon:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 .main-footer-top {
   position: absolute;
   right: 0;
