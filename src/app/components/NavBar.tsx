@@ -24,7 +24,7 @@ export default function NavBar() {
         stuck = true;
       }
 
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative scrolling
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     const handleMousemove = (event: MouseEvent) => {
