@@ -64,7 +64,6 @@ function get_cooking_text() {
         default:
             return 'Cooking up some Hearty Durians';
     }
-
 }
 
 function get_study_text() {
