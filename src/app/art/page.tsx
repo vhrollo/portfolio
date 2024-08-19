@@ -21,7 +21,7 @@ export default function Art() {
         <Card
           title="Dedouze Tram"
           imageSrc={tram}
-          description="Some wierd suspension train thingy. Made in blender, and is very inspired by Dedouze."
+          description="Some weird suspension train thingy. Made in blender, and is very inspired by Dedouze."
         />
         <Card
           title="Vending Machine"

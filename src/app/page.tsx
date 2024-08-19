@@ -28,14 +28,14 @@ export default function Home() {
       <section className="header">
         <div className="header-content">
           <div className="header-circle">
-            <img src="./pfp/cat.png" alt="totally me fr" className="header-img"/>
+            <img src="./pfp/cat.png" alt="totally me fr" className="header-img" loading="eager"/>
           </div>
           
           <span className="intro-text">
             <div className="intro-spacer"/>
             <span className="intro-line">Hi there 👋</span>
             <br/>
-            <span className="intro-line">I'm Fillip,</span>
+            <span className="intro-line">I&apos;m Fillip,</span>
             <br/>
             <span className="intro-line">a comp sci student</span>
             <br/>
@@ -60,18 +60,18 @@ export default function Home() {
       <div className="border-line"></div>
       <section className="about-section">
         <div className="content">
-          <div className={`content-item ${isAboutSeen === false ? 'closed' : ''}`}>
+          <div className={`content-item ${isAboutSeen === false ? 'about-closed' : ''}`}>
             <h1 className="about-me-title">About Me</h1>
             <p className="about-me-text">My name is Fillip Lampe.</p>
             <p className="about-me-text">
-              I'm passionate about a wide range of topics,
+              I&apos;m passionate about a wide range of topics,
               particularly math, programming,
               exploring new programming languages,
               algorithms, shaders, operating systems,
               and much more.
             </p>
             <p className="about-me-text">
-              I'm currently pursuing a Bachelor's
+              I&apos;m currently pursuing a Bachelor&apos;s
               degree in Artificial Intelligence at
               the University of Bergen.
             </p>

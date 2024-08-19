@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <main className="flex min-h-screen flex-col items-center px-6 max-w-screen-lg mx-auto">
       <h1 className="about-page-title">Projects Page</h1>
-      <h2 className="about-page-subtitle">Some of my side projects I've been cooking up</h2>
+      <h2 className="about-page-subtitle">Some of my side projects I&apos;ve been cooking up</h2>
       <div className="card-grid">
         <Card
           title="Water Simulation"

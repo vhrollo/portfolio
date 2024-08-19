@@ -42,7 +42,7 @@ export default function About() {
           <div className="about-page-content-item itemnormal">
             <h2 className="about-item-title">Current read</h2>
             <p>
-              As of making this I'm reading myself throughout the Lord of the rings series
+              As of making this I&apos;m reading myself throughout the Lord of the rings series
             </p>
           </div>
           <div className="about-page-content-item itemnormal items-center">
@@ -55,7 +55,7 @@ export default function About() {
         <div className="about-page-content">
           <div className="about-page-content-item item60">
             <h2 className="about-item-title">Hobbies</h2>
-            <p className="about-item-text"> When i'm not at uni, working, or coding, I mostly read, boulder, go hiking, play games, 3d model, paint, or watch series/movies</p>
+            <p className="about-item-text"> When I&apos;m not at uni, working, or coding, I mostly read, boulder, go hiking, play games, 3d model, paint, or watch series/movies</p>
           </div>
           <div className="about-page-content-item item40 items-center">
             <Link href="https://open.spotify.com/artist/21TinSsF5ytwsfdyz5VSVS?si=C17RMFQARxuzxgPIs0oHOQ">
