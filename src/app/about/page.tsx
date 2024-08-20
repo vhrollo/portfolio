@@ -1,5 +1,6 @@
-import { get_right_now, get_activity_now, get_emoji_now } from './right-now';
 import Link from 'next/link';
+
+import RightNow from "./right-now";
 
 export default function About() {
   return (
@@ -24,17 +25,7 @@ export default function About() {
             <img src="/icons/debian-icon.png" alt="Rust" className="about-item-image" loading='lazy'/>
             <p>i use debian btw</p>
           </div>
-          <div className="about-page-content-item item60 item-gradient items-center leading-6">
-            <p className="text-7xl">
-              {get_emoji_now()}
-            </p>
-            <p>
-              {get_activity_now()}
-            </p>
-            <p>
-              {get_right_now()}
-            </p>
-          </div>
+          <RightNow />
         </div>
 
 
