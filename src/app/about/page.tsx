@@ -49,10 +49,10 @@ export default function About() {
             <p className="about-item-text"> When I&apos;m not at uni, working, or coding, I mostly read, boulder, go hiking, play games, 3d model, paint, or watch series/movies</p>
           </div>
           <div className="about-page-content-item item40 items-center">
-            <Link href="https://open.spotify.com/artist/21TinSsF5ytwsfdyz5VSVS?si=C17RMFQARxuzxgPIs0oHOQ">
-              <img src="/icons/dodie-icon.jpeg" alt="Current top artist" className="about-item-image-spotify" loading='lazy'/>
+            <Link href="https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ?si=Gj38_VQySNu383qAMzIFaw">
+              <img src="/icons/magbay.jpg" alt="Current top artist" className="about-item-image-spotify" loading='lazy'/>
             </Link>
-            <h2 >Current Top Artist: Dodie</h2>
+            <h2 >Current Top Artist: Magdalena Bay</h2>
           </div>
         </div>
 
