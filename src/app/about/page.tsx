@@ -11,7 +11,7 @@ export default function About() {
         <div className="about-page-content">
           <div className="about-page-content-item item60 item-gradient">
             <h2 className="about-item-title">Coding Skills</h2>
-            <p className="about-item-text"> Rust, WebGl, Glsl, Python, JavaScript/Typescript, C#, and more</p>
+            <p className="about-item-text"> Rust, WebGl, Glsl, Python, JavaScript/Typescript, C#, and currently trying to grasp C</p>
             <p className="about-item-text italic">to be continued</p>
           </div>
           <div className="about-page-content-item item40 items-center">
