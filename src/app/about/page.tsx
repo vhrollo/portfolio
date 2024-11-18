@@ -59,7 +59,7 @@ export default function About() {
         <div className="about-page-content">
           <div className="about-page-content-item item40 items-center ">
             <div className='color-block'>#c76e3f</div>
-            <p>My current favorite color as of 21:26 18/08/24</p>
+            <p>My current favorite color as of 13:59 18/11/24</p>
           </div>
           <div className="about-page-content-item item60 items-center">
             <div className='flex-row flex items-center'>
