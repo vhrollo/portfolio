@@ -6,6 +6,7 @@ export default function Projects() {
 
   const water = ["./projects/water-sim.gif"]
   const portfolio = ["./projects/portfolio.png"]
+  const advent = ["./projects/advent-of-code.png"]
 
   return (
     <main className="flex min-h-screen flex-col items-center px-6 max-w-screen-lg mx-auto">
@@ -23,7 +24,13 @@ export default function Projects() {
           imageSrc={portfolio}
           link="https://github.com/vhrollo/portfolio"
           description="This website made in react, nextjs, and tailwindcss(, but mostly normal css)."
-        />       
+        />
+        <Card
+          title="Advent of Code"
+          imageSrc={advent}
+          link="https://github.com/vhrollo/advent-of-code"
+          description="Solutions for the Advent of Code challenges (2023- ), combining problem-solving with a stressful exam period!"
+        />
       </div>
     </main>
   );
