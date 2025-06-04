@@ -1,0 +1,26 @@
+# node 
+node_modules
+.next
+
+# docker stuff
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# git
+.git
+.gitignore
+.env
+
+
+# scrips and ide
+.vscode
+Makefile
+helm-charts
+
+# other
+README.md
+LICENSE
+.editorconfig
+.idea
+coverage*
