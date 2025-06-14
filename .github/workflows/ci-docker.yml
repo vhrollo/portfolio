@@ -1,27 +1,30 @@
-name: Build & Publish Docker Image
+name: Build & Push Portfolio Image
 
 on:
   push:
-    branches:
-      - "main"
+    branches: [ main ]
+
 jobs:
   build-and-push:
-    name: Build Docker Images
     runs-on: self-hosted
+    permissions:
+      contents: read
+      packages: write
 
     steps:
-      - name: Update & build Portfolio image
-        run: |
-          cd /opt/website/portfolio
-          git pull origin main
-          docker build \
-            -t portfolio:latest \
-            .
-      
-      - name: Update & restart Traefik stack
-        run: |
-          cd /opt/traefik-tunnel
-          git pull origin main
-          docker compose pull
-          docker compose up -d --build
-          
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & push portfolio image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/portfolio:latest
