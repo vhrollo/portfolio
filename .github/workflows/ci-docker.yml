@@ -1,0 +1,27 @@
+name: Build & Publish Docker Image
+
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  build-and-push:
+    name: Build Docker Images
+    runs-on: self-hosted
+
+    steps:
+      - name: Update & build Portfolio image
+        run: |
+          cd /opt/website/portfolio
+          git pull origin main
+          docker build \
+            -t portfolio:latest \
+            .
+      
+      - name: Update & restart Traefik stack
+        run: |
+          cd /opt/traefik-tunnel
+          git pull origin main
+          docker compose pull
+          docker compose up -d --build
+          
