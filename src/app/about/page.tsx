@@ -52,7 +52,7 @@ export default function About() {
             <Link href="https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ?si=Gj38_VQySNu383qAMzIFaw">
               <img src="/icons/magbay.jpg" alt="Current top artist" className="about-item-image-spotify" loading='lazy'/>
             </Link>
-            <h2 >Current Top Artist: Magdalena Bay!?!?</h2>
+            <h2 >Current Top Artist: Magdalena Bay!?!?.</h2>
           </div>
         </div>
 
