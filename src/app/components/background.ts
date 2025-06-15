@@ -8,7 +8,6 @@
 
 
 export function dark(): void {
-	console.log("dark");
   window.requestAnimationFrame = window.requestAnimationFrame; 
 
   let width: number, height: number, numStars: number;

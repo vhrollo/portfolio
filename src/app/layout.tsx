@@ -6,7 +6,10 @@ import NavBar from "./components/NavBar";
 import Universe from "./components/Universe";
 import Footer from "./components/Footer";
 
-const inter = Source_Code_Pro({ subsets: ["latin"] });
+const inter = Source_Code_Pro({ 
+  subsets: ["latin"],
+  preload: false
+});
 
 export const metadata: Metadata = {
   title: "filliplampe.com",
