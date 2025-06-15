@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +21,6 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
           <NavBar />
           <Universe />
           {children}
-          <Analytics />
           <Footer />
         </div>
       </body>
