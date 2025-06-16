@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 import NavBar from "./components/NavBar";
@@ -26,6 +27,12 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
           {children}
           <Footer />
         </div>
+      
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
