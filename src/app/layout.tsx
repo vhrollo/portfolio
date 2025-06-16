@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 import NavBar from "./components/NavBar";
