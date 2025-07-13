@@ -22,8 +22,8 @@ export default function About() {
 
         <div className="about-page-content">
           <div className="about-page-content-item item40 items-center ">
-            <img src="/icons/debian-icon.png" alt="Rust" className="about-item-image" loading='lazy'/>
-            <p>i use debian btw</p>
+            <img src="/icons/arch-icon.png" alt="Rust" className="about-item-image" loading='lazy'/>
+            <p>i use arch btw...</p>
           </div>
           <RightNow />
         </div>

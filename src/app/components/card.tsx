@@ -55,9 +55,9 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, link, description }) => {
         ) : (
           <img src={imageSrc[currentImage]} alt={title} className="card-grid-image" loading="lazy" />
         )}
-        <img src='./icons/arrow.png' alt='right arrow' loading='lazy' onClick={nextImage}
+        <img src='./icons/arrow-contrast.png' alt='right arrow' loading='lazy' onClick={nextImage}
           className={`card-grid-btn-text card-grid-next ${rightvisable === false ? 'hide' : ''}`}/>
-        <img src='./icons/arrow.png' alt='left arrow' loading='lazy' onClick={prevImage} 
+        <img src='./icons/arrow-contrast.png' alt='left arrow' loading='lazy' onClick={prevImage} 
           className={`card-grid-btn-text card-grid-prev ${leftvisable === false ? 'hide' : ''}`}/>
       </div>
       <div className="card-grid-title">
