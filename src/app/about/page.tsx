@@ -23,12 +23,10 @@ export default function About() {
         <div className="about-page-content">
           <div className="about-page-content-item item40 items-center ">
             <img src="/icons/arch-icon.png" alt="Rust" className="about-item-image" loading='lazy'/>
-            <p>i use arch btw...</p>
+            <p>arch user👀</p>
           </div>
           <RightNow />
         </div>
-
-
         <div className="about-page-content">
           <div className="about-page-content-item itemnormal">
             <h2 className="about-item-title">Current read</h2>
@@ -46,13 +44,36 @@ export default function About() {
         <div className="about-page-content">
           <div className="about-page-content-item item60">
             <h2 className="about-item-title">Hobbies</h2>
-            <p className="about-item-text"> When I&apos;m not at uni, working, or coding, I mostly read, boulder, go hiking, play games, 3d model, paint, or watch series/movies</p>
+            <p className="about-item-text"> When I&apos;m not at uni, working, or coding, I mostly read, boulder, go hiking, play games, 3d model, paint, or watch series/movies/anime</p>
           </div>
           <div className="about-page-content-item item40 items-center">
             <Link href="https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ?si=Gj38_VQySNu383qAMzIFaw">
               <img src="/icons/magbay.jpg" alt="Current top artist" className="about-item-image-spotify" loading='lazy'/>
             </Link>
             <h2 >Current Top Artist: Magdalena Bay</h2>
+          </div>
+        </div>
+
+        <div className="about-page-content">
+          <div className="about-page-content-item itemnormal">
+            <h2 className="about-item-title">Favorite Ghibli movie</h2>
+            <p>
+              Probably Ponyo or Arietty! (check out my&nbsp;
+              <Link href="https://letterboxd.com/vhrollo/" className="about-me-link">
+                letterboxed
+              </Link>
+              )
+            </p>
+          </div>
+          <div className="about-page-content-item itemnormal items-center">
+            <h2 className="about-item-title">Favorite animes</h2>
+            <p>
+              Either HxH, Frieren, or Gintama! ( im quite a big weeb, as you can see on&nbsp;
+              <Link href="https://myanimelist.net/profile/vhrollo" className="about-me-link">
+                MAL
+              </Link>
+              )
+            </p>
           </div>
         </div>
 
