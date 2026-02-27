@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 250) {
         setAboutSeen(true);
       } else {
         setAboutSeen(false);

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import RightNow from "./right-now";
+import WebRing from './webring';
 
 export default function About() {
   return (
@@ -22,8 +23,8 @@ export default function About() {
 
         <div className="about-page-content">
           <div className="about-page-content-item item40 items-center ">
-            <img src="/icons/arch-icon.png" alt="Rust" className="about-item-image" loading='lazy'/>
-            <p>arch user👀</p>
+            <img src="/icons/debian-icon.png" alt="Rust" className="about-item-image" loading='lazy'/>
+            <p>Debian fanboyᶻ𝗓𐰁.ᐟ</p>
           </div>
           <RightNow />
         </div>
@@ -35,9 +36,7 @@ export default function About() {
             </p>
           </div>
           <div className="about-page-content-item itemnormal items-center">
-            <p>
-              Both based and from Norway 🇳🇴
-            </p>
+            <WebRing/> 
           </div>
         </div>
 

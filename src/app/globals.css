@@ -811,6 +811,34 @@ body {
   opacity: 0.8;
 }
 
+.webring-btn {
+  width: 80px;
+  image-rendering: pixelated;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.webring-btn:hover{
+  opacity: 0.8;
+}
+
+.webring-btn-left {
+  /* transform: translateY(-50%); */
+  transform: scaleX(-1);
+  filter: invert(0.8);
+}
+
+.webring-btn-mid {
+
+}
+
+.webring-btn-right {
+  /* transform: translateY(-50%); */
+  filter: invert(0.8);
+}
+
+
 .hide {
   display: none;
 }
