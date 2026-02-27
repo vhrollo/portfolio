@@ -3,7 +3,7 @@ export default function WebRing() {
   return (
     <div className="width: fit-content; border: 2px outset; text-align:center">
         <p className="about-item-title text-center flex flex-col items-center gap-4">
-            Kiki's Webring
+            Kiki&apos;s Webring
         </p>
         <div className='flex justify-between items-center gap-8'>
             <a href="https://webri.ng/webring/kiki/previous?via=https%3A%2F%2Fwww.filliplampe.com%2F">
