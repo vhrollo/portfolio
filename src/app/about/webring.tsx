@@ -1,9 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-
 export default function WebRing() {
-
-
   return (
     <div className="width: fit-content; border: 2px outset; text-align:center">
         <p className="about-item-title text-center flex flex-col items-center gap-4">
