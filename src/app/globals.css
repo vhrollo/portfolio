@@ -827,6 +827,7 @@ body {
   /* transform: translateY(-50%); */
   transform: scaleX(-1);
   filter: invert(0.8);
+  width: 60px;
 }
 
 .webring-btn-mid {
@@ -836,6 +837,7 @@ body {
 .webring-btn-right {
   /* transform: translateY(-50%); */
   filter: invert(0.8);
+  width: 60px;
 }
 
 
