@@ -11,11 +11,12 @@ export default function Art() {
   const turbo = ["./art/turbo/turbo1.png","./art/turbo/turbo3.png","./art/turbo/turbo2.png"]
   const reze = ["./art/reze/reze1.gif","./art/reze/reze2.png","./art/reze/reze3.png"]
   const unit01 = ["./art/unit01/unit1.gif","./art/unit01/unit2.png"]
+  const star = ["./art/star-trails/trail1.gif","./art/star-trails/trail2.png","./art/star-trails/trail3.png"]
 
   return (
     <main className="flex min-h-screen flex-col items-center px-6 max-w-screen-lg mx-auto">
       <h1 className="about-page-title">Arts Page</h1>
-      <h2 className="about-page-subtitle">Some of my favorite 3d models and paintings ive been making here and there</h2>
+      <h2 className="about-page-subtitle">Some of my favorite 3d models, paintings, and other stuff ive been making here and there</h2>
       <div className="card-grid">
         <Card
           title="Reze!"
@@ -31,6 +32,11 @@ export default function Art() {
           title="DandaDan"
           imageSrc={turbo}
           description="Modelled a charachter i liked from Dandadan, printed it, and then paited it. I basically go around with it everyday now"
+        />
+        <Card
+          title="Star trails"
+          imageSrc={star}
+          description="I went out and tried to catch some star trails doing sequence imaging, then editing them later"
         />
         <Card
           title="Self Portrait:P"

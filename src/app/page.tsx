@@ -48,7 +48,7 @@ export default function Home() {
             <br/>
             <span className="intro-line">
               and sometimes&nbsp;
-              <Link href="/art" className="intro-link">3d art</Link>
+              <Link href="/art" className="intro-link">artsy stuff</Link>
               . 
             </span>
             <br/>
